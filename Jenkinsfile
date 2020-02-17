@@ -12,6 +12,19 @@ pipeline
     stages 
     {
 
+           stage('Step1')
+        {
+            steps
+            {
+            sh"""
+            ls
+chmod 777 nexus.sh
+./step1.sh
+                             """
+            }
+        }
+          
+          
  stage('NEXUS')
         {
             steps
@@ -23,8 +36,6 @@ chmod 777 nexus.sh
                              """
             }
         }
-
-
 
 }
 }
