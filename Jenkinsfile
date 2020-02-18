@@ -25,6 +25,30 @@ chmod 777 nexus.sh
         }
           
           
+            stage('Step2')
+        {
+            steps
+            {
+            sh"""
+            ls
+chmod 777 nexus.sh
+./step2.sh
+                             """
+            }
+        }
+            
+           stage('Step3')
+        {
+            steps
+            {
+            sh"""
+            ls
+chmod 777 nexus.sh
+./step3.sh
+                             """
+            }
+        }
+          
  stage('NEXUS')
         {
             steps
