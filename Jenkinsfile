@@ -16,8 +16,7 @@
             {
             sh"""
             ls
-chmod 777 nexus.sh
-./step1.sh
+bat step1.bat
                              """
             }
         }           
